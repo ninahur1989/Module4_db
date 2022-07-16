@@ -6,8 +6,8 @@
         {
             using (ApplicationContext context = new ApplicationContextFactory().CreateDbContext(Array.Empty<string>()))
             {
-                Program program = new Program();
-                program.AddInstance(context);
+                //Program program = new Program();
+                //program.AddInstance(context);
 
             }
         }
@@ -96,14 +96,14 @@
                 Title = "rock"
             };
 
-            // adder
+            //adder
 
-            //context.Artists.Add(artist1);
-            //context.Artists.Add(artist2);
-            //context.Artists.Add(artist3);
-            //context.Artists.Add(artist4);
+            context.Artists.Add(artist1);
+            context.Artists.Add(artist2);
+            context.Artists.Add(artist3);
+            context.Artists.Add(artist4);
 
-            //context.SaveChanges();
+            context.SaveChanges();
 
 
             context.Genres.Add(genre3);
